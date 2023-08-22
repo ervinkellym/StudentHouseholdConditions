@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scrollama: Basic Example</title>
+    <title>Student Household Conditions: About</title>
     <meta name="description" content="Scrollama: Basic Example" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
@@ -57,10 +57,34 @@
         </p>
         <h2 class="intro__dek">Process</h2>
         <p class="intro__text">
+          I started by loading the Urban Institute dataset into a
           <a href="StrugglingStudentsJupyterNotebook.zip" download>Jupyter Notebook</a>
+          and used the Pandas library to clean and pare down the data. Then I
+          imported a supplemental dataset to add County FIPS identifiers for the
+           Urban Institute data. I removed duplicate counties, which may have
+           led to inaccurate conclusions about counties containing multiple
+           school districts. A Pandas GroupBy operation and a proportional
+           average of the school districts making up each county would remedy
+           this. Time constraints for this project did not allow for this
+           correction, as GroupBy can be finicky.
+          <br><br>
+          At this point, the data required to fill in choropleth graphs was
+          exported to a CSV. That CSV went into an
           <a href="https://observablehq.com/@ervinkellym/linguisticaly-isolated-choropleth" target="_blank">
             Observable Notebook
           </a>
+           where I used Observable Plot to create a county choropleth of each a
+           ttribute from the Urban Institute data.
+          <br><br>
+          I exported the choropleths into Canva and manually added callouts to
+          highlight counties of interest and ensure the maps all lined up
+          correctly. All these Canva assets went into my site, which uses
+          Scrollama.js for the sticky scrolling functionality. The rest of the
+          work was basic web development.
+        </p>
+        <h2 class="intro__dek">Evolution</h2>
+        <p class="intro__text">
+         TODO
         </p>
         <h2 class="intro__dek">Accessibility</h2>
         <p class="intro__text">
