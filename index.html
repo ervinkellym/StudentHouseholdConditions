@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Side Example</title>
+    <meta name="description" content="Scrollama: Sticky Side Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    <style>
+
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        /* background-color: #f3f3f3; */
+        padding: 1rem;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 40%;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        /* background-color: #8a8a8a; */
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-transition: background-image 0.2s ease-in-out;
+        transition: background-image 0.2s ease-in-out;
+      }
+
+      .sticky-thing p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        /* background-color: #3b3b3b; */
+        color: #000000;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: #AAD0E5;
+        /* color: #3b3b3b; */
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .center {
+        margin: auto;
+        width: 60%;
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">Where are America's Struggling Students?</h1>
+        <p class="intro__dek">
+          <br>
+          School Districts Most In Need of Educational Intervention to Catch Students up in a Post-Pandemic Learning Environment
+        </p>
+        <p class="intro__text">
+          The Urban Institute houses a dataset, "Household Conditions by
+          Geographic School District". Which details, by school district,
+          percentages of households experiencing different conditions that may
+          affect remote learning. Below is a series of charts with that data
+          broken up by county (parish, borough).
+          <br><br>
+          The counties with the highest rates of these conditions likely have
+          many students who struggled educationally during the COVID-19 pandemic
+          and likely require educational intervention and support to get back on
+          track.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1" data-image="linguisticallyisolated">
+            <p>
+              <br>
+              <u>Households with Linguistically Isolated Children</u>
+              <br><br>
+              Linguistic Isolation is a term for limited English speaking
+              households. Students in these households who have difficulty
+              understanding remote instruction would likely not be able to
+              overcome that difficulty with the help of non-English speaking
+              adults in the home.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="2" data-image="linguisticallyisolatedcallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Fresno County, CA - 66%
+              <br>Harris County, TX - 34%
+              <br>El Paso County, TX - 31%
+              <br>Zapata County, TX - 31%
+              <br>La Paz County, AZ - 30%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="3" data-image="disabilities">
+            <p>
+              <br>
+              <u>Children with Disabilities</u>
+              <br><br>
+              Children with disabilities already experience educational setbacks
+               in in-person learning environments. With the implementation of
+               remote learning, these children likely no longer have access to
+               the resources provided in an in-person school setting.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="4" data-image="disabilitiescallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Adams County, WA - 50%
+              <br>Monterey County, CA - 50%
+              <br>Fairbanks North Star Borough, AK - 20%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="5" data-image="nocomputer">
+            <p>
+              <br>
+              <u>Households with No Computer or Internet Access</u>
+              <br><br>
+              Children who do not have access to a computer or the internet at
+              home will have had an incredibly difficult time with
+              remote-learning. Even for school districts who were able to
+              provide these resources to students in need, these students likely
+              still lacked the computer literacy skills required to perform well
+              in a remote-learning environment.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="6" data-image="nocomputercallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Liberty County, MT - 100%
+              <br>Orange County, NY - 88%
+              <br>Telfair County, GA - 79%
+              <br>Taos County, NM - 76%
+              <br>La Paz County, AZ - 72%
+              <br>Victoria County, TX - 71%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="7" data-image="crowded">
+            <p>
+              <br>
+              <u>Households with Crowded Conditions</u>
+              <br><br>
+              Children living in crowded households will not have had the space
+              or ability to focus in remote education. This likely greatly
+              impacted their ability to learn effectively.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="8" data-image="crowdedcallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Mohave County, AZ - 50%
+              <br>Nome Borough, AK - 40%
+              <br>Orange County, NY - 35%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="9" data-image="vulnerablejobs">
+            <p>
+              <br>
+              <u>Households with Vulnerable Jobs</u>
+              <br><br>
+              Vulnerable jobs are those that pay low wages and do not provide
+              benefits. Children living in households reliant on vulnerable jobs
+              will have experienced additional uncertainty and/or scarcity during
+              the COVID-19 pandemic.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="10" data-image="vulnerablejobscallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Monterey County, CA - 67%
+              <br>Colfax County, NM - 56%
+              <br>Richland County, SC - 55%
+              <br>Franklin County, ME - 53%
+              <br>Gallatin County, MT - 53%
+              <br>Presidio County, TX - 53%
+              <br>Grand County, UT - 53%
+              <br>San Juan County, UT - 53%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="11" data-image="singleparent">
+            <p>
+              <br>
+              <u>Single Parent Households</u>
+              <br><br>
+              Single parents likely had less time to help their children with
+              remote learning than parents in dual-parent households who could
+              share that task.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="12" data-image="singleparentcallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Somerset County, ME - 100%
+              <br>Catron County, NM - 100%
+              <br>Jefferson County, OR - 100%
+              <br>Adams County, WA - 100%
+              <br>Jefferson County, MS - 96%
+              <br>La Paz County, AZ - 83%
+              <br>Clay County, GA - 82%
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="13" data-image="poverty">
+            <p>
+              <br>
+              <u>Households Living in Poverty</u>
+              <br><br>
+              Poverty is a large indicator of overall disadvantage that can
+              affect educational success. Children living in poverty may be
+              without the resources at home to facilitate remote learning and
+              may also experience instability, such as food insecurity, as a
+              result of not attending school in person. These factors can
+              severely limit a child's ability to learn effectively.
+              <br><br>
+            </p>
+          </div>
+          <div class="step" data-step="14" data-image="povertycallout">
+            <p>
+              <br>
+              The most affected counties are:
+              <br>
+              <br>Bullock County, AL - 65%
+              <br>East Carroll Parish, LA - 64%
+              <br>Washington County, MS - 54%
+              <br>Uvalde County, TX - 52%
+              <br>La Paz County, AZ - 51%
+              <br>Orange County, NY - 50%
+              <br><br>
+            </p>
+          </div>
+        </article>
+
+        <div class="sticky-thing">
+          <p></p>
+        </div>
+      </section>
+
+      <section id="callout">
+        <div class="center">
+          <p>
+            Of all the counties called out above, there are three called out in
+            multiple risk categories.
+            <br><br>
+            <u>Monterey County, California</u>
+            <br>50% Children with Disabilities
+            <br>67% Households with Vulnerable Jobs
+            <br><br>
+            <u>Orange County, New York</u>
+            <br>88% Households with No Computer or Internet Access
+            <br>35% Households with Crowded conditions
+            <br>50% Households in Poverty
+            <br><br>
+            <u>La Paz County, Arizona</u>
+            <br>30% Linguistically Isolated Households
+            <br>72% Households with No Computer or Internet Access
+            <br>83% Single Parent Households
+            <br>51% Households in Poverty
+            <br><br><br>
+            If you live in one of these three counties, any of the counties
+            highlighted in the charts above, or a state that is home to one of
+            those counties? If so, please consider contacting your
+            representatives to ask for additional resources for your local
+            school district(s) in need.
+            <br><br>
+            An easy way to contact your reps is by
+            using Democracy.io's platform.
+          </p>
+        </div>
+        <button class="button" style="vertical-align:middle" onclick="window.open('https://democracy.io/#!/', '_blank')">
+          <span>Take Me There </span>
+        </button>
+      </section>
+
+      <section id="outro"></section>
+    </body>
+
+    <nav>
+      <div class="nav__examples">
+        <a href="about.html">About This Project</a>
+      </div>
+    </nav>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky.style.backgroundImage = `url('images/${el.dataset.image}.svg')`;
+      }
+
+      function init() {
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.5,
+            debug: false // Set this flag to toggle markings for scrolly switches
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+</html>

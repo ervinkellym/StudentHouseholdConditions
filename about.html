@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Basic Example</title>
+    <meta name="description" content="Scrollama: Basic Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">About</h1>
+        <p class="intro__center">
+          This was created by Kelly Ervin Mills as a final project for the MICA
+          MPS Data Analytics and Visualization Program's Design Lab: The
+          Industry Challenge course during the Summer 2023 semester.
+        </p>
+        <h2 class="intro__dek">Inspiration & Goal</h2>
+        <p class="intro__text">
+          I live in an extremely under-resourced school district in rural
+          Appalachia. In college, I volunteered at the local Head Start center
+          and was struck by how much of a difference early educational
+          intervention can make for children with varying disadvantages who are
+          struggling to keep up with their peers. I wanted to expand that line
+          of thinking into K-12 schools and create a piece that can draw
+          attention to those who need it most.
+          <br><br>
+          In an interactive “scrollytelling”/visual essay format, I wanted
+          locate and draw attention to school districts that likely have the
+          most students who have fallen behind and are struggling educationally.
+        </p>
+        <h2 class="intro__dek">Audience</h2>
+        <p class="intro__text">
+         My primary audience is constituents in school districts with the most
+         at-risk students. I believe this is useful for anyone interested in
+         K-12 education in America. But, I am specifically targeting people
+         living in the most affected school districts. I want the stark contrast
+         between the highlighted districts and the rest of the country to hit
+         home for those who call those places home. I hope that the realization
+         that their communities are in need will compel members of my target
+         audience to answer the call to action by contacting their
+         representatives to advocate for funding for their local students.
+        </p>
+        <h2 class="intro__dek">Data</h2>
+        <p class="intro__text">The data fueling this project is The Urban
+          Institute's "
+          <a href="https://datacatalog.urban.org/dataset/household-conditions-geographic-school-district" target="_blank">
+            Household Conditions by Geographic School District
+          </a>
+           " dataset. From The Urban Institute: "This dataset describes the share of households within a
+           geographic school district with conditions that may affect remote
+           K–12 learning environments, such as linguistic isolation, crowded
+           conditions, and access to a computer and broadband internet."
+        </p>
+        <h2 class="intro__dek">Process</h2>
+        <p class="intro__text">
+          <a href="StrugglingStudentsJupyterNotebook.zip" download>Jupyter Notebook</a>
+          <a href="https://observablehq.com/@ervinkellym/linguisticaly-isolated-choropleth" target="_blank">
+            Observable Notebook
+          </a>
+        </p>
+        <h2 class="intro__dek">Accessibility</h2>
+        <p class="intro__text">
+          While this project isn't 100% section 508 compliant, some design
+          decisions were made with visual accessibility in mind. This project
+          uses the
+          <a href="https://opendyslexic.org/" target="_blank">
+            Open Dyslexic
+          </a>
+          font throughout to increase readability. All charts use single-color
+          scales that are equally visibly accessible to people with all types of
+           color-blindness. The single-color scale is also less stimulating for
+           some neurodivergent folks. Font and background color combinations all
+           meet to WCAG AA contrast requirements.
+          <br><br>
+          Additional changes can, and should, be made to make this project
+          accessible for a wider audience. Due to time limitations, all charts
+          are static assets, including the callouts. However, all the callout
+          text is duplicated in the scrolling text. The charts require detailed
+          alt-text descriptions to make sense for screen readers. All efforts
+          should be made to adjust the font/background color combinations to be
+          WCAG AAA compliant instead of just AA.
+        </p>
+      </section>
+      <nav>
+        <div class="nav__examples">
+          <a href="index.html">The Project</a>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>

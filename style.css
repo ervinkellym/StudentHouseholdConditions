@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open-Dyslexic', sans-serif;
+  min-height: 1280px;
+  color: #000000;
+  font-size: 24px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1E6AAF;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  background: #f3f3f3;
+  padding: 1rem;
+  padding-right: 2rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.nav__examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+#intro {
+  max-width: 60%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__hed {
+  font-size: 2em;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  font-size: 1.25em;
+  color: #8a8a8a;
+}
+
+.intro__text {
+  text-align: left;
+  margin: 5rem auto 5rem auto;
+}
+.intro__center {
+  text-align: center;
+  margin: 5rem auto 5rem auto;
+}
+
+#intro {
+  margin-bottom: 10ren;
+}
+
+#outro {
+  height: 100px;
+}
+
+.button {
+  display: block;
+  border-radius: 4px;
+  background-color: #1E6AAF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin: auto;
+  width: 17%;
+  padding: 1rem;
+  font-family: 'Open-Dyslexic', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
